@@ -1,0 +1,97 @@
+{
+  "skills": [
+    {
+      "id": "3",
+      "src": "./img/feather-pen-1.png",
+      "title": "Languages",
+      "description": [
+        "JavaScript",
+        "Java",
+        "Python"
+      ]
+    },
+    {
+      "id": "2",
+      "src": "./img/nodes.png",
+      "title": "Back-End",
+      "description": [
+        "Node, Express, Spring, Django, Flask",
+        "DBMS: MySQL, PostgreSQL, MongoDB, SQLite"
+      ]
+    },
+    {
+      "id": "1",
+      "src": "./img/feather-pen-2.png",
+      "title": "Front-End",
+      "description": [
+        "Html, CSS, JavaScript.",
+        "BootStrap",
+        "React/Redux"
+      ]
+    },
+    {
+      "id": "4",
+      "src": "./img/product-chain-1.png",
+      "title": "Also experienced in",
+      "description": [
+        "Docker",
+        "Git & GitHub",
+        "Render, Heroku"
+      ]
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "3",
+      "src": "./img/placeholder-image-1.png",
+      "techs": [
+        "MONGODB",
+        "Express",
+        "REACT",
+        "NODE"
+      ],
+      "title": "MERN E-Commerce Web Application",
+      "description": "A platform that merges the strengths of the MERN stack. It combines MongoDB for db management, Express.js for efficient server operations, React for a user-friendly interface,and Node.js for server-side scripting.This innovative application offers a modern and intuitive shopping experience for both customers and businesses.",
+      "link": "https://github.com/HansLanda14ib/E-commerce-API"
+    },
+    {
+      "id": "1",
+      "src": "./img/pharmafinder.png",
+      "techs": [
+        "SPRING",
+        "REACT"
+      ],
+      "title": "PharmaFinder : Pharmacy Locator Web/Mobile App",
+      "description": "A dynamic platform that combines Spring Boot and React. It serves a dual purpose, empowering both pharmacy owners and users. Pharmacy owners gain the ability to edit pharmacy information, set operating hours. Simultaneously, users can easily discover available pharmacies and identify those offering night shift services.",
+      "link": "https://github.com/HansLanda14ib/PharmafinderAppFrontEnd"
+    },
+    {
+      "id": "2",
+      "src": "./img/ffrm.png",
+      "techs": [
+        "REACT",
+        "DJANGO REST"
+      ],
+      "title": "FFRM : Football Field Reservation Management",
+      "description": " A dynamic web application developed that simplifies the reservation process for football fields. Developed using Django Rest Framework and React.js, it enables users to seamlessly reserve their preferred fields and make online payments. This project revolutionizes field bookings, making it convenient for customers and field owners.",
+      "link": "https://ffrm.vercel.app/"
+    }
+  ],
+  "testimonial": [
+    {
+      "id": "1",
+      "title": "DevOps, Cloud, and Agile Foundations",
+      "src": "./img/1.png"
+    },
+    {
+      "id": "2",
+      "title": "Developing Back-End Apps with Node.js and Express",
+      "src": "./img/2.png"
+    },
+    {
+      "id": "3",
+      "title": "Python Functions, Files, and Dictionaries",
+      "src": "./img/3.png"
+    }
+  ]
+}
