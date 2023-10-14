@@ -10,10 +10,8 @@ export default function AboutMe() {
                         expertise in software development. I hold a Master's degree in Materials Science and have
                         successfully transitioned into the field of Software Development, with valuable experience and
                         newfound skills.
-
-
-                    </p>
-                    <p className="hero--section-description">
+                        <br/>
+                        <br/>
                         In addition to my studies, I am also working as the Education Manager at the CPGE IbnGhazi
                         center,
                         where I oversee various educational programs and initiatives. Additionally, I serve as a Python
@@ -23,12 +21,13 @@ export default function AboutMe() {
                         I have the opportunity to apply my leadership skills and contribute to the growth and success of
                         the center,
                         nurturing an environment that promotes learning and development
+
                     </p>
 
                 </div>
             </div>
             <div className="about--section--img">
-                <img src="./img/hero_img.png" alt="About Me"/>
+                <img src="./aboutme.png" alt="About Me"/>
             </div>
 
         </section>
