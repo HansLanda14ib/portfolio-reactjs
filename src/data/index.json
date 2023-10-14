@@ -59,9 +59,9 @@
       "src": "./img/pharmafinder.png",
       "techs": [
         "SPRING",
-        "REACT"
+        "REACT","PostgreSQL"
       ],
-      "title": "PharmaFinder : Pharmacy Locator Web/Mobile App",
+      "title": "PharmaFinder : Web/Mobile App",
       "description": "A dynamic platform that combines Spring Boot and React. It serves a dual purpose, empowering both pharmacy owners and users. Pharmacy owners gain the ability to edit pharmacy information, set operating hours. Simultaneously, users can easily discover available pharmacies and identify those offering night shift services.",
       "link": "https://github.com/HansLanda14ib/PharmafinderAppFrontEnd"
     },

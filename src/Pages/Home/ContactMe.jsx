@@ -1,4 +1,19 @@
+import emailjs from '@emailjs/browser';
+import {useRef} from "react";
+
 export default function ContactMe() {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_jumcdjm', 'template_0yydyw3', form.current, 'AuSkL9D26DsmEvD3X')
+        .then((result) => {
+          console.log(result.text);
+        }, (error) => {
+          console.log(error.text);
+        });
+
+  };
   return (
     <section id="Contact" className="contact--section">
       <div>
@@ -9,7 +24,7 @@ export default function ContactMe() {
           Send me a message here, or at <strong>badreddineibzazne@gmail.com</strong>.
         </p>
       </div>
-      <form className="contact--form--container">
+      <form ref={form} className="contact--form--container" onSubmit={sendEmail}>
         <div className="container">
           <label htmlFor="first-name" className="contact--label">
             <span className="text-md">First Name</span>
@@ -57,7 +72,7 @@ export default function ContactMe() {
           <span className="text-md">Message</span>
           <textarea
             className="contact--input text-md"
-            id="message"
+            name="message"
             rows="8"
             placeholder="Type your message..."
           />
