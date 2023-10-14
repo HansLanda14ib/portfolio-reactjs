@@ -7,7 +7,7 @@
       "description": [
         "JavaScript",
         "Java",
-        "Python"
+        "Python","",""
       ]
     },
     {
@@ -16,7 +16,7 @@
       "title": "Back-End",
       "description": [
         "Node, Express, Spring, Django, Flask",
-        "DBMS: MySQL, PostgreSQL, MongoDB, SQLite"
+        "DBMS: MySQL, PostgreSQL, MongoDB, SQLite","",""
       ]
     },
     {
@@ -26,7 +26,7 @@
       "description": [
         "Html, CSS, JavaScript.",
         "BootStrap",
-        "React/Redux"
+        "React/Redux","",""
       ]
     },
     {
@@ -34,6 +34,7 @@
       "src": "./img/product-chain-1.png",
       "title": "Also experienced in",
       "description": [
+        "Android App Development",
         "Docker",
         "Git & GitHub",
         "Render, Heroku"
@@ -80,18 +81,28 @@
   "testimonial": [
     {
       "id": "1",
-      "title": "DevOps, Cloud, and Agile Foundations",
-      "src": "./img/1.png"
+      "title": "Android App dev",
+      "src": "./img/certs/cert1.jpg"
     },
     {
       "id": "2",
-      "title": "Developing Back-End Apps with Node.js and Express",
-      "src": "./img/2.png"
+      "title": "Devops",
+      "src": "./img/certs/cert2.jpg"
     },
     {
       "id": "3",
+      "title": "Data collection python",
+      "src": "./img/certs/cert3.jpg"
+    },
+    {
+      "id": "4",
       "title": "Python Functions, Files, and Dictionaries",
-      "src": "./img/3.png"
+      "src": "./img/certs/cert4.jpg"
+    },
+    {
+      "id": "5",
+      "title": "back end node js express",
+      "src": "./img/certs/cert5.jpg"
     }
   ]
 }

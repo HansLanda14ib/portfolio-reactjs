@@ -1,6 +1,19 @@
 import data from "../../data/index.json";
+import {Card} from 'primereact/card';
+import {Carousel} from "primereact/carousel";
 
 export default function Testimonial() {
+    const certificationTemplate = (certification) => {
+        return (
+            <Card
+
+                style={{marginBottom: '1rem', margin: '1rem'}}
+            >
+                <img src={certification.src} alt={certification.title} style={{width: '100%'}}/>
+            </Card>
+
+        );
+    };
     return (
 
         <section className="testimonial--section" id="testimonial">
@@ -11,15 +24,33 @@ export default function Testimonial() {
                 </div>
             </div>
             <div className="portfolio--section--container">
-                {data?.testimonial?.map((item, index) => (<div key={index} className="portfolio--section--img">
-                    <h3 className="portfolio--section--title" style={{"text-align": "center"}}>
-                        {item.title}
-                    </h3>
-                    <br/>
-                    <div className="portfolio--section--img">
-                        <img src={item.src} height={500} width={500} alt=" Avatar"/>
-                    </div>
-                </div>))}
+
+                <Carousel
+                    value={data.testimonial}
+                    itemTemplate={certificationTemplate}
+                    numVisible={3}
+                    numScroll={2}
+                    circular
+                    nextIco={<i className="pi pi-chevron-right"></i>}
+                    prevIco={<i className="pi pi-chevron-left"></i>}
+                    responsiveOptions={[
+                        {
+                            breakpoint: '1024px',
+                            numVisible: 3,
+                            numScroll: 3,
+                        },
+                        {
+                            breakpoint: '768px',
+                            numVisible: 2,
+                            numScroll: 2,
+                        },
+                        {
+                            breakpoint: '560px',
+                            numVisible: 1,
+                            numScroll: 1,
+                        },
+                    ]}
+                />
             </div>
         </section>);
 }

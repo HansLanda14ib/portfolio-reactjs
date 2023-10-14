@@ -1,4 +1,3 @@
-import {Link} from "react-scroll";
 import React from "react";
 
 export default function HeroSection() {
@@ -14,7 +13,7 @@ export default function HeroSection() {
                     </h1>
                     <p className="hero--section-description">
                         I hold a Master's degree in Chemistry. And have recently made a career shift to become a
-                        Software Developer and I'm now ready to work on web projects.
+                        Software Developer and I'm now ready to work on real projects.
 
                     </p>
 
@@ -37,7 +36,7 @@ export default function HeroSection() {
 
             </div>
             <div className="hero--section--img">
-                <img src="./img/herophoto.png" alt="Hero Section"/>
+                <img src="./img/hero2.svg" alt="Hero Section"/>
             </div>
         </section>
     );
