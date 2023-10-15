@@ -1,13 +1,20 @@
-import data from "../../data/index.json";
+import {useContext} from "react";
+import data_en from "../../data/index.json";
+import data_fr from "../../data/dataFr.json";
+import {LanguageContext} from "../LanguageContext";
 
 export default function MyPortfolio() {
+    const {language} = useContext(LanguageContext);
+    const data = language === 'english' ? data_en : data_fr;
+
+
     const githubProfileUrl = 'https://github.com/HansLanda14ib';
     return (
         <section className="portfolio--section" id="MyPortfolio">
             <div className="portfolio--container-box">
                 <div className="portfolio--container">
-                    <p className="sub--title">Recent Projects</p>
-                    <h2 className="section--heading">My Portfolio</h2>
+                    <p className="sub--title">{language === 'english' ? 'Recent Projects' : 'Projets récents'}</p>
+                    <h2 className="section--heading">{language === 'english' ? 'My Portfolio' : 'Mon Portfolio'}</h2>
                 </div>
 
                 <div>
@@ -26,7 +33,7 @@ export default function MyPortfolio() {
                                 fill="currentColor"
                             />
                         </svg>
-                        Visit My GitHub
+                        {language === 'english' ? 'Visit My GitHub' : 'Visitez mon GitHub'}
                     </a>
                 </div>
 
@@ -50,7 +57,7 @@ export default function MyPortfolio() {
                                             border: '1px solid black',
                                             borderRadius: '5px',
                                             backgroundColor: '#006b6a',
-                                            color:'antiquewhite'
+                                            color: 'antiquewhite'
                                         }}>
       {item}
     </span>
@@ -59,7 +66,7 @@ export default function MyPortfolio() {
 
                             </div>
                             <a href={item.link} className="text-sm portfolio--link">
-                                View In Github
+                                {language === 'english' ? 'View In Github' : 'Voir sur Github'}
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="16"

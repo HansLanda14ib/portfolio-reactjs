@@ -1,13 +1,33 @@
 import {Link} from "react-scroll";
-import React from "react";
+import React, {useContext} from "react";
+import {LanguageContext} from "../LanguageContext";
 
 function Footer() {
+    const {language, toggleLanguage} = useContext(LanguageContext);
+    const footerItems = {
+        english: {
+            home: 'Home',
+            projects: 'Projects',
+            about: 'About Me',
+            contact: 'Contact',
+            certifications: 'certifications',
+            made: 'Made by Hanslanda14ib',
+        },
+        french: {
+            home: 'Accueil',
+            projects: 'Projets',
+            about: 'À propos de moi',
+            contact: 'Contactez-moi',
+            certifications: 'Certifications',
+            made: 'Fait par Hanslanda14ib',
+        },
+    };
     return (
         <footer className="footer--container">
             <div className="footer--link--container">
                 <div>
                     <div className="footer--content--container">
-                        <p className="footer--content">Made by Hanslanda14ib</p>
+                        <p className="footer--content"> {footerItems[language].made}</p>
 
                     </div>
                 </div>
@@ -23,7 +43,7 @@ function Footer() {
                                 to="heroSection"
                                 className="text-md"
                             >
-                                Home
+                                {footerItems[language].home}
                             </Link>
                         </li>
                         <li>
@@ -36,7 +56,7 @@ function Footer() {
                                 to="MyPortfolio"
                                 className="text-md"
                             >
-                                Projects
+                                {footerItems[language].projects}
                             </Link>
                         </li>
                         <li>
@@ -49,7 +69,7 @@ function Footer() {
                                 to="AboutMe"
                                 className="text-md"
                             >
-                                About Me
+                                {footerItems[language].about}
                             </Link>
                         </li>
                         <li>
@@ -62,7 +82,7 @@ function Footer() {
                                 to="Contact"
                                 className="text-md"
                             >
-                                Contact
+                                {footerItems[language].contact}
                             </Link>
                         </li>
                         <li>
@@ -75,7 +95,7 @@ function Footer() {
                                 to="testimonial"
                                 className="text-md"
                             >
-                                Certifications
+                                {footerItems[language].certifications}
                             </Link>
                         </li>
                     </ul>

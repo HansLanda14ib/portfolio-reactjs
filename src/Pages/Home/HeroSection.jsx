@@ -1,27 +1,43 @@
-import React from "react";
+import React, {useContext} from "react";
 import data from "../../data/index.json";
+import {LanguageContext} from "../LanguageContext";
+
 export default function HeroSection() {
-    return (
-        <section id="heroSection" className="hero--section">
-            <div className="hero--section--content--box">
-                <div className="hero--section--content">
-                    <p className="section--title">Hey, I'm Badreddine</p>
-                    <h1 className="hero--section--title">
-                        <span className="hero--section-title--color">A final-year </span>{" "}
-                        <br/>
-                        Software Enginner Student
-                    </h1>
-                    <p className="hero--section-description">
-                        I hold a Master's degree in Chemistry. And have recently made a career shift to become a
-                        Software Developer and I'm now ready to work on real projects.
+    const {language} = useContext(LanguageContext);
+    const content = {
+        english: {
+            title: 'Hi, I\'m Badreddine',
+            subtitle: 'A final-year ',
+            subtitle2: 'Computer Engineering and Networks Student',
+            description: 'I hold a Master of Science in Chemistry. And have recently made a career shift to become a Computer Engineer and I\'m now ready to work on real projects.',
+            resume: 'My Resume'
+        }, french: {
+            title: 'Bonjour, je suis Badreddine',
+            subtitle: "Étudiant en 5ème année ",
+            subtitle2: 'Ingénierie Informatique et Réseaux',
+            description: 'Je suis titulaire d\'un master en chimie. J\'ai récemment opéré une reconversion professionnelle pour devenir ingénieur d\'Informatique et je suis maintenant prêt à travailler sur des projets concrets.',
+            resume: 'Mon CV'
+        },
+    };
+    return (<section id="heroSection" className="hero--section">
+        <div className="hero--section--content--box">
+            <div className="hero--section--content">
+                <p className="section--title">{content[language].title}</p>
+                <h1 className="hero--section--title">
+                    <span className="hero--section-title--color">{content[language].subtitle}</span>{" "}
+                    <br/>
+                    {content[language].subtitle2}
+                </h1>
+                <p className="hero--section-description">
+                    {content[language].description}
 
-                    </p>
+                </p>
 
-                </div>
-                <br/>
-                <a href={data.CvLink}
-                   style={{textDecoration: "none"}}>
-                    <button className="btn btn-primary" style={{display: "flex", alignItems: "center"}}>
+            </div>
+            <br/>
+            <a href={data.CvLink}
+               style={{textDecoration: "none"}}>
+                <button className="btn btn-primary" style={{display: "flex", alignItems: "center"}}>
         <span style={{marginRight: "8px"}}>
             <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -29,15 +45,14 @@ export default function HeroSection() {
                       fill="#ffffff"/>
             </svg>
         </span>
-                        <span>My Resume</span>
-                    </button>
-                </a>
+                    <span>{content[language].resume}</span>
+                </button>
+            </a>
 
 
-            </div>
-            <div className="hero--section--img">
-                <img src="./img/hero2.svg" alt="Hero Section"/>
-            </div>
-        </section>
-    );
+        </div>
+        <div className="hero--section--img">
+            <img src="./img/hero2.svg" alt="Hero Section"/>
+        </div>
+    </section>);
 }

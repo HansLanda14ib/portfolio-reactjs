@@ -1,8 +1,14 @@
 import data from "../../data/index.json";
 import {Card} from 'primereact/card';
 import {Carousel} from "primereact/carousel";
+import {useContext} from "react";
+import {LanguageContext} from "../LanguageContext";
+import data_en from "../../data/index.json";
+import data_fr from "../../data/dataFr.json";
 
 export default function Testimonial() {
+    const {language} = useContext(LanguageContext);
+
     const certificationTemplate = (certification) => {
         return (
             <Card
@@ -20,7 +26,7 @@ export default function Testimonial() {
             <div className="portfolio--container-box">
                 <div className="portfolio--container">
                     <p className="sub--title">Certifications</p>
-                    <h2 className="sections--heading">Academic Certifications</h2>
+                    <h2 className="sections--heading">{language === 'english' ? 'University Certificates' : 'Certificats Universitaires'}</h2>
                 </div>
             </div>
             <div className="portfolio--section--container">

@@ -1,0 +1,24 @@
+.toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-btn {
+    background-color: #f4f4f4;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.toggle-btn.en {
+    color: #A22F4F;
+}
+
+.toggle-btn.fr {
+    color: #006b6a;
+}
+
+/* Ajoutez d'autres styles personnalisés selon vos préférences de conception */
