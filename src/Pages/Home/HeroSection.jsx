@@ -1,5 +1,5 @@
 import React from "react";
-
+import data from "../../data/index.json";
 export default function HeroSection() {
     return (
         <section id="heroSection" className="hero--section">
@@ -19,7 +19,7 @@ export default function HeroSection() {
 
                 </div>
                 <br/>
-                <a href='https://drive.google.com/file/d/1TeVAZ0YRxli4hXHMTzajhTOYgpy5fPrc/view?usp=sharing'
+                <a href={data.CvLink}
                    style={{textDecoration: "none"}}>
                     <button className="btn btn-primary" style={{display: "flex", alignItems: "center"}}>
         <span style={{marginRight: "8px"}}>
