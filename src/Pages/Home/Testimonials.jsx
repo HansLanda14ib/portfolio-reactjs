@@ -3,8 +3,7 @@ import {Card} from 'primereact/card';
 import {Carousel} from "primereact/carousel";
 import {useContext} from "react";
 import {LanguageContext} from "../LanguageContext";
-import data_en from "../../data/index.json";
-import data_fr from "../../data/dataFr.json";
+
 
 export default function Testimonial() {
     const {language} = useContext(LanguageContext);

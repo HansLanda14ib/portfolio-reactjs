@@ -1,9 +1,11 @@
 import React, {useContext} from "react";
-import data from "../../data/index.json";
 import {LanguageContext} from "../LanguageContext";
+import data_en from "../../data/index.json";
+import data_fr from "../../data/dataFr.json";
 
 export default function HeroSection() {
     const {language} = useContext(LanguageContext);
+    const data = language === 'english' ? data_en : data_fr;
     const content = {
         english: {
             title: 'Hi, I\'m Badreddine',

@@ -1,11 +1,30 @@
 import {useState, useEffect, useContext} from "react";
 import {Link} from "react-scroll";
 import {LanguageContext} from "../LanguageContext";
-import './ToggleButton.css'; // Import the CSS file for styling
+import './ToggleButton.css';
+import {ToggleButton} from "primereact/togglebutton"; // Import the CSS file for styling
 
 function Navbar() {
-    const [navActive, setNavActive] = useState(false);
 
+    const [navActive, setNavActive] = useState(false);
+    const {language, toggleLanguage} = useContext(LanguageContext);
+    const [checked, setChecked] = useState(false);
+    const navItems = {
+        english: {
+            home: 'Home',
+            projects: 'Projects',
+            about: 'About Me',
+            certifications: 'Certifications',
+            contact: 'Contact',
+        },
+        french: {
+            home: 'Accueil',
+            projects: 'Projets',
+            about: 'À propos de moi',
+            certifications: 'Certifications',
+            contact: 'Contactez-moi',
+        },
+    };
     const toggleNav = () => {
         setNavActive(!navActive);
     };
@@ -33,23 +52,7 @@ function Navbar() {
             closeMenu;
         }
     }, []);
-    const {language, toggleLanguage} = useContext(LanguageContext);
-    const navItems = {
-        english: {
-            home: 'Home',
-            projects: 'Projects',
-            about: 'About Me',
-            certifications: 'Certifications',
-            contact: 'Contact',
-        },
-        french: {
-            home: 'Accueil',
-            projects: 'Projets',
-            about: 'À propos de moi',
-            certifications: 'Certifications',
-            contact: 'Contactez-moi',
-        },
-    };
+
     return (
         <nav className={`navbar ${navActive ? "active" : ""}`}>
             <div>
@@ -119,7 +122,7 @@ function Navbar() {
                             to="testimonial"
                             className="navbar--content"
                         >
-                            {navItems[language].Certifications}
+                            {navItems[language].certifications}
                         </Link>
                     </li>
                 </ul>
@@ -136,11 +139,18 @@ function Navbar() {
             >
                 {navItems[language].contact}
             </Link>
-            <div className="toggle-container">
+            {/* <div className="toggle-container">
                 <button className={language === 'english' ? 'toggle-btn en' : 'toggle-btn fr'} onClick={toggleLanguage}>
                     {language === 'english' ? 'Switch to French' : 'Passer à l\'anglais'}
                 </button>
+            </div> */}
+
+            <div className="card flex justify-content-center">
+                <ToggleButton onLabel="FR" offLabel="EN" checked={checked} onChange={(e) => setChecked(e.value)}
+                              onClick={toggleLanguage}
+                              className="w-9rem"/>
             </div>
+
         </nav>
     );
 }
