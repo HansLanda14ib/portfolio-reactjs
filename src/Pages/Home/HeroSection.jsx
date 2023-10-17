@@ -11,13 +11,17 @@ export default function HeroSection() {
             title: 'Hi, I\'m Badreddine',
             subtitle: 'A final-year ',
             subtitle2: 'Computer Engineering and Networks Student',
-            description: 'I hold a Master of Science in Chemistry. And have recently made a career shift to become a Computer Engineer and I\'m now ready to work on real projects.',
+            description: "In 2017, I obtained a Master\'s of Science degree in Chemistry. " +
+                "Recently, I changed my career path to become a software engineer, " +
+                "and I am now ready to work on real projects",
             resume: 'My Resume'
         }, french: {
             title: 'Bonjour, je suis Badreddine',
             subtitle: "Étudiant en 5ème année ",
             subtitle2: 'Ingénierie Informatique et Réseaux',
-            description: 'Je suis titulaire d\'un master en chimie. J\'ai récemment opéré une reconversion professionnelle pour devenir ingénieur d\'Informatique et je suis maintenant prêt à travailler sur des projets concrets.',
+            description: 'En 2017, j\'ai obtenu un master ST en chimie. ' +
+                'Récemment, j\'ai changé de voie pour devenir ingénieur en informatique et ' +
+                'je suis maintenant prêt à me travailler sur des projets concrets.',
             resume: 'Mon CV'
         },
     };

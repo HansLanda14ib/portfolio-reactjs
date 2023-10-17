@@ -17,10 +17,10 @@ export default function AboutMe() {
         }, french: {
             title: 'À propos', heading: 'À propos de moi',
             description: `
-            Je suis titulaire d'un master en sciences des matériaux et je suis actuellement en 5ème année - ingénierie informatique et réseaux à l'EMSI Marrakech.`,
+            Je suis titulaire d'un master ST en chimie et je suis actuellement en 5ème année filière Ingénierie Informatique et Réseaux à l'EMSI Marrakech.`,
             description2: `
             En parallèle de mes études, j'occupe le poste de Responsable Informatique au centre CPGE Ibn Ghazi, supervisant toutes les fonctions liées à la technologie. 
-            Auparavant, j'ai été Rresponsable Scolarité dans le même centre, soutenant les programmes éducatifs et veillant à un apprentissage efficace pour les étudiants ainsi qu'à des ressources adéquates pour les enseignants. 
+            Auparavant, j'ai été Responsable Scolarité dans le même centre, soutenant les programmes éducatifs et veillant à un apprentissage efficace pour les étudiants ainsi qu'à des ressources adéquates pour les enseignants. 
             
             `,
             description3: `Dans ces rôles, j'applique des compétences en leadership, contribuant à la croissance du centre et favorisant un environnement d'apprentissage favorable.`

@@ -9,7 +9,7 @@
       "description": [
         "JavaScript",
         "Java",
-        "Python","",""
+        "Python","","","",""
       ]
     },
     {
@@ -28,7 +28,7 @@
       "description": [
         "Html, CSS, JavaScript.",
         "BootStrap",
-        "React/Redux","",""
+        "React/Redux","","","",""
       ]
     },
     {
@@ -36,7 +36,7 @@
       "src": "./img/product-chain-1.png",
       "title": "Also experienced in",
       "description": [
-        "Android App Development",
+        "Android App Dev",
         "Docker",
         "Git & GitHub",
         "Render, Heroku"
@@ -53,7 +53,7 @@
         "REACT",
         "NODE"
       ],
-      "title": "MERN E-Commerce Web Application",
+      "title": "MERN E-Commerce App",
       "description": "A platform that merges the strengths of the MERN stack. It combines MongoDB for db management, Express.js for efficient server operations, React for a user-friendly interface,and Node.js for server-side scripting.This innovative application offers a modern and intuitive shopping experience for both customers and businesses.",
       "link": "https://github.com/HansLanda14ib/E-commerce-API"
     },
@@ -75,7 +75,7 @@
         "REACT",
         "DJANGO REST"
       ],
-      "title": "FFRM : Football Field Reservation Management",
+      "title": "Field Reservation Management",
       "description": " A dynamic web application developed that simplifies the reservation process for football fields. Developed using Django Rest Framework and React.js, it enables users to seamlessly reserve their preferred fields and make online payments. This project revolutionizes field bookings, making it convenient for customers and field owners.",
       "link": "https://ffrm.vercel.app/"
     }

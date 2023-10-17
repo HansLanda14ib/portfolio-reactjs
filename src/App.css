@@ -114,10 +114,10 @@ h2 {
 /* Body 2 */
 .text-md {
   color: var(--darkblue);
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
+  font-weight: 300;
+  line-height: 30px;
 }
 /* Body 3 */
 .text-sm {
@@ -223,9 +223,9 @@ h2 {
 }
 .hero--section-description {
   color: var(--darkblue);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 36px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
 }
 .hero--section--img {
   display: flex;
@@ -312,7 +312,7 @@ h2 {
   display: grid;
   padding: 33px 105px;
   align-items: center;
-  gap: 405px;
+  gap: 100px;
   grid-template-columns: repeat(2, 1fr);
 }
 .about--section--img > img {
@@ -345,7 +345,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 42.6px;
+  gap: 20px;
   width: 100%;
 }
 .portfolio--section--img {
@@ -359,7 +359,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
+  gap: 15px;
   flex: 1 0 0;
   background: #fff;
   box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);

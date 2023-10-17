@@ -52,15 +52,13 @@ export default function MyPortfolio() {
                                 <div>
                                     {item.techs?.map((item, index) => (
                                         <span key={index} style={{
-                                            marginRight: '10px',
-                                            padding: '5px',
+                                            marginRight: '7px',
+                                            padding: '4px',
                                             border: '1px solid black',
-                                            borderRadius: '5px',
+                                            borderRadius: '4px',
                                             backgroundColor: '#006b6a',
                                             color: 'antiquewhite'
-                                        }}>
-      {item}
-    </span>
+                                        }}>{item}</span>
                                     ))}
                                 </div>
 

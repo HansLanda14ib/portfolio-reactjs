@@ -18,7 +18,7 @@
       "title": "Back-End",
       "description": [
         "Node, Express, Spring, Django, Flask",
-        "DBMS: MySQL, PostgreSQL, MongoDB, SQLite","",""
+        "DBMS: MySQL, PostgreSQL, MongoDB, SQLite"
       ]
     },
     {
@@ -34,9 +34,9 @@
     {
       "id": "4",
       "src": "./img/product-chain-1.png",
-      "title": "Également expérimenté en",
+      "title": "Aussi",
       "description": [
-        "Développement d'applications Android",
+        "Développement Android",
         "Docker",
         "Git & GitHub",
         "Render, Heroku"
@@ -48,12 +48,12 @@
       "id": "3",
       "src": "./img/placeholder-image-1.png",
       "techs": [
-        "MONGODB",
+        "MongoDB",
         "Express",
-        "REACT",
-        "NODE"
+        "React",
+        "Node"
       ],
-      "title": "Application Web de commerce électronique MERN",
+      "title": "E-commerce souvenir shop",
       "description":"Plateforme combinant les forces de la pile MERN - MongoDB, Express.js, React, et Node.js. Offre une expérience d'achat moderne et intuitive pour les clients et les entreprises",
       "link": "https://github.com/HansLanda14ib/E-commerce-API"
     },
@@ -61,22 +61,22 @@
       "id": "1",
       "src": "./img/pharmafinder.png",
       "techs": [
-        "SPRING",
-        "REACT","PostgreSQL"
+        "Spring",
+        "React","PostgreSQL"
       ],
-      "title": "PharmaFinder : Application Web de recherche de pharmacies",
-      "description": "Plateforme dynamique combinant Spring Boot et React, bénéfique aux propriétaires de pharmacies et aux utilisateurs. Les propriétaires peuvent éditer les informations et les horaires, tandis que les utilisateurs découvrent facilement les pharmacies disponibles, y compris celles ouvertes la nuit.",
+      "title": "PharmaFinder",
+      "description": "Une plateforme améliorant la communication entre les propriétaires de pharmacie et les utilisateurs, améliorant la gestion de l'information, l'accessibilité et facilitant la localisation des pharmacies à proximité.",
       "link": "https://github.com/HansLanda14ib/PharmafinderAppFrontEnd"
     },
     {
       "id": "2",
       "src": "./img/ffrm.png",
       "techs": [
-        "REACT",
-        "DJANGO REST"
+        "Django Rest",
+        "React","mySQL"
       ],
-      "title": "FFRM : Application Web de réservation de terrains de football",
-      "description": "Une application web dynamique développée pour simplifier le processus de réservation de terrains de football. Développée à l'aide de Django Rest Framework et de React.js, elle permet aux utilisateurs de réserver facilement leurs terrains préférés et d'effectuer des paiements en ligne. Ce projet révolutionne les réservations de terrains, rendant la vie plus pratique pour les clients et les propriétaires de terrains",
+      "title": "FFRM",
+      "description": "Faisant partie d'une équipe collaborative de 4 personnes, j'ai développé une application web dynamique pour la réservation de terrains de football. Cette plateforme a permis des réservations fluides et des paiements en ligne",
       "link": "https://ffrm.vercel.app/"
     }
   ],

@@ -13,7 +13,7 @@ export default function MySkills() {
         },
         french: {
             title: 'Mes Compétences',
-            heading: 'Mon Expertise',
+            heading: 'Techniques',
         },
     };
     return (
