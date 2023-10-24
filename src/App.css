@@ -312,11 +312,11 @@ h2 {
   display: grid;
   padding: 33px 105px;
   align-items: center;
-  gap: 100px;
+  gap: 500px;
   grid-template-columns: repeat(2, 1fr);
 }
 .about--section--img > img {
-  width: 100%;
+  width: 75%;
   height: 100%;
 }
 /* About Us Ends */
