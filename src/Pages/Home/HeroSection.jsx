@@ -17,7 +17,7 @@ export default function HeroSection() {
             resume: 'My Resume'
         }, french: {
             title: 'Bonjour, je suis Badreddine',
-            subtitle: "Étudiant en 5ème année ",
+            subtitle: "Étudiant ingénieur en 5ème année ",
             subtitle2: 'Ingénierie Informatique et Réseaux',
             description: 'En 2017, j\'ai obtenu un master ST en chimie. ' +
                 'Récemment, j\'ai changé de voie pour devenir ingénieur en informatique et ' +

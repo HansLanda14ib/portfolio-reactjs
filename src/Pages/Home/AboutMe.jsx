@@ -8,22 +8,18 @@ export default function AboutMe() {
         english: {
             title: 'About',
             heading: 'About Me',
-            description: `I am currently in my final year at EMSI Marrakech, focusing on Computer Engineering and Networks. 
-            With a Master's degree in Materials Science, I successfully transitioned into Software Development.`,
-            description2: `Alongside my studies, I worked as an IT manager at CPGE Ibn Ghazi center, overseeing all technology-related functions. Previously, 
-            I was the education manager at the same center, supporting educational programs and ensuring effective learning for students and adequate resources for teachers. 
+            description: `Engineering student in the 5th year, specializing in Computer Engineering and Networks at EMSI in Marrakech.`,
+            description2: `After obtaining my master's degree in chemistry in 2017, I worked for 3 years as Educational Manager at CPGE Ibn Ghazi. 
            `,
-            description3: ` In these roles, I apply leadership skills, contributing to the center's growth and fostering a supportive learning environment.`
+            description3: `During these 3 years, I demonstrated my work ethic, problem-solving skills, and ability to work in a team by managing the administration and computer systems of the center.`
         }, french: {
             title: 'À propos', heading: 'À propos de moi',
             description: `
-            Je suis titulaire d'un master ST en chimie et je suis actuellement en 5ème année filière Ingénierie Informatique et Réseaux à l'EMSI Marrakech.`,
+            Étudiant ingénieur en 5ème année, filière Ingénierie Informatique et Réseaux à l'EMSI de Marrakech.`,
             description2: `
-            En parallèle de mes études, j'occupe le poste de Responsable Informatique au centre CPGE Ibn Ghazi, supervisant toutes les fonctions liées à la technologie. 
-            Auparavant, j'ai été Responsable Scolarité dans le même centre, soutenant les programmes éducatifs et veillant à un apprentissage efficace pour les étudiants ainsi qu'à des ressources adéquates pour les enseignants. 
-            
-            `,
-            description3: `Dans ces rôles, j'applique des compétences en leadership, contribuant à la croissance du centre et favorisant un environnement d'apprentissage favorable.`
+            Après l'obtention de mon diplôme de master en chimie en 2017, j'ai travaillé pendant 3 ans en tant que responsable de la scolarité au centre CPGE Ibn Ghazi,  
+`,
+            description3: `Au cours de ces 3 ans, j'ai pu démontrer ma force de travail, ma capacité à résoudre les problèmes et ma capacité à travailler en équipe en gérant l'administration et les systèmes informatiques du centre.`
         },
     };
 

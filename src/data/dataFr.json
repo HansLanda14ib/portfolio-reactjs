@@ -1,15 +1,15 @@
 
 {
-  "CvLink": "https://drive.google.com/file/d/1mnxOanYGklQ9jZk0sNhgRfIoCY9viylF/view?usp=drive_link",
+  "CvLink": "https://drive.google.com/file/d/1M97Ba1RFJN0oSzxY82HjYYw9xcpwrmYj/view?usp=drive_link",
   "skills": [
     {
       "id": "3",
       "src": "./img/feather-pen-1.png",
       "title": "Langages",
       "description": [
-        "JavaScript",
         "Java",
-        "Python","",""
+        "JavaScript",
+        "Python","C++","C#"
       ]
     },
     {
@@ -17,8 +17,8 @@
       "src": "./img/nodes.png",
       "title": "Back-End",
       "description": [
-        "Node, Express, Spring, Django, Flask",
-        "DBMS: MySQL, PostgreSQL, MongoDB, SQLite"
+        "Node, Express", "Spring, Django, Flask",
+        "DBMS: ","MySQL, PostgreSQL","SQL Server,MongoDB, SQLite"
       ]
     },
     {
@@ -26,9 +26,9 @@
       "src": "./img/feather-pen-2.png",
       "title": "Front-End",
       "description": [
-        "Html, CSS, JavaScript.",
-        "BootStrap",
-        "React/Redux","",""
+        "Html, CSS, JS.",
+        "Bootstrap",
+        "React/Redux","Angular","",""
       ]
     },
     {
@@ -37,9 +37,10 @@
       "title": "Aussi",
       "description": [
         "Développement Android",
-        "Docker",
+        "Docker, Kubernetes",
         "Git & GitHub",
-        "Render, Heroku"
+        "Render, Heroku",
+        "Agile, Kanban, Scrum"
       ]
     }
   ],
